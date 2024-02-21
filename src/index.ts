@@ -1,4 +1,4 @@
-export default function slugify(text: string): string {
+export function slugify(text: string): string {
   const from =
     "àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìıİłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;";
   const to =

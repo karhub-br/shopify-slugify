@@ -1,11 +1,15 @@
 {
   "name": "shopify-slugify",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple npm package that provides a function for creating slugs from strings. It replaces special characters, removes spaces, and converts text to a URL-friendly format.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsup"
   },
   "repository": {
     "type": "git",
@@ -30,6 +34,7 @@
   },
   "homepage": "https://github.com/karhub-br/shopify-slugify#readme",
   "devDependencies": {
+    "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   }
 }
