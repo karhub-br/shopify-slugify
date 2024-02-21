@@ -16,7 +16,7 @@ npm install shopify-slugify
 ## Usage in JavaScript/Node.js
 Once the package is installed, you can use it in your JavaScript/Node.js code. Import the slugify function and call it with a string to generate a slug:
 ```js
-import slugify from 'shopify-slugify';
+import { slugify } from 'shopify-slugify';
 
 const inputString = "This is a Sample String!";
 const slug = slugify(inputString);
