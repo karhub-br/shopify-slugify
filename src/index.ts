@@ -3,7 +3,10 @@ export function slugify(text: string): string {
     "àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìıİłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż+·/_,:;";
   const to =
     "aaaaaaaaaacccddeeeeeeeegghiiiiiiiilmnnnnoooooooooprrsssssttuuuuuuuuuwxyyzzz--------------";
-  const textToCompare = new RegExp(from.split("").join("|"), "g");
+  const textToCompare = new RegExp(
+    from.split("").join("|").replace(/\+/g, "\\+"),
+    "g"
+  );
 
   return text
     .toString()
