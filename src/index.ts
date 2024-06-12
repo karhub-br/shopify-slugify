@@ -11,7 +11,7 @@ export function slugify(text: string): string {
   return text
     .toString()
     .toLowerCase()
-    .replace('&', '38')
+    .replace('&', '-38-')
     .replace(/\s+/g, "-") // Replace spaces with -
     .replace(textToCompare, (c) => to.charAt(from.indexOf(c))) // Replace special characters
     .replace(/[&.]/g, "-") // Replace DOT with -

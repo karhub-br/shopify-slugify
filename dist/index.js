@@ -30,7 +30,7 @@ function slugify(text) {
     from.split("").join("|").replace(/\+/g, "\\+"),
     "g"
   );
-  return text.toString().toLowerCase().replace("&", "38").replace(/\s+/g, "-").replace(textToCompare, (c) => to.charAt(from.indexOf(c))).replace(/[&.]/g, "-").replace(/[^\w-º+]+/g, "").replace(/--+/g, "-").replace(/^-+/, "").replace(/-+$/, "");
+  return text.toString().toLowerCase().replace("&", "-38-").replace(/\s+/g, "-").replace(textToCompare, (c) => to.charAt(from.indexOf(c))).replace(/[&.]/g, "-").replace(/[^\w-º+]+/g, "").replace(/--+/g, "-").replace(/^-+/, "").replace(/-+$/, "");
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
