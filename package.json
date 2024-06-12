@@ -1,6 +1,6 @@
 {
   "name": "shopify-slugify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple npm package that provides a function for creating slugs from strings. It replaces special characters, removes spaces, and converts text to a URL-friendly format.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -36,5 +36,8 @@
   "devDependencies": {
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "shopify-slugify": "^1.0.5"
   }
 }
